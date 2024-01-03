@@ -9,11 +9,12 @@ import hello2.core.member.MemberServiceImpl;
 public class MemberApp {
 
     public static void main(String[] args) {
-        MemberService memberservice = new MemberServiceImpl();
+        AppConfig appConfig = new AppConfig();
+        MemberService memberService = appConfig.memberService();
         Member member = new Member(1L,"member", Grade.VIP);
-        memberservice.join(member);
+        memberService.join(member);
 
-        Member findMember = memberservice.findMember(1L);
+        Member findMember = memberService.findMember(1L);
         System.out.println("new member = " + member.getName());
         System.out.println("find member = " + findMember.getName());
     }
