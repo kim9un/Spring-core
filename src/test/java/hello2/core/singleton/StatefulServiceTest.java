@@ -12,7 +12,7 @@ public class StatefulServiceTest {
     @Test
     void statefulServiceSingleton(){
 
-        ApplicationContext ac = new AnnotationConfigApplicationContext();
+        ApplicationContext ac = new AnnotationConfigApplicationContext(TestConfig.class);
 
         StatefulService statefulService1 = ac.getBean("statefulService", StatefulService.class);
         StatefulService statefulService2 = ac.getBean("statefulService", StatefulService.class);
