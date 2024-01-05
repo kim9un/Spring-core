@@ -1,4 +1,4 @@
-package singleton;
+package hello2.core.singleton;
 
 import hello2.core.AppConfig;
 import hello2.core.member.MemberService;
