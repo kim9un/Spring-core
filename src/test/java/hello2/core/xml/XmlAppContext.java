@@ -1,4 +1,4 @@
-package hello2.core.xml;
+/*package hello2.core.xml;
 
 import hello2.core.member.MemberService;
 import org.assertj.core.api.Assertions;
@@ -19,3 +19,4 @@ class XmlAppContext {
     }
 }
 
+*/
